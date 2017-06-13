@@ -52,6 +52,12 @@ class ViewController: UIViewController {
         intAnswer = intNumber1 + intNumber2
         print("intAnswer \(intAnswer)")
         
+        //Change int to String
+        strAnswer = String(intAnswer)
+        
+        //Show Srting to Label
+        answerLabel.text = strAnswer  //ดอทเท็กถ้าอยู่ด้านหลังเครื่องหมายเท่ากับแปลว่าเอาค่ามาเก็บไว้ที่ตัวเอง แต่ถ้าอยู่หน้าเครื่องหมายเท่ากับแปลว่าให้แสดงค่าได้เลย
+        
         
         
     } // answerButton
