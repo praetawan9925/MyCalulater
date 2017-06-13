@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     //Implicit คือ  การประกาศตัวแปรโดยกำหนดชนิดตัวแปรเอง
     var intNumber1 = 0  //ถ้าประกาศแบบนี้ตัวแปรจะเป็น Double อัตโนมัติ
-    var intNumber2: Int = 0 //ถ้าประกาศแบบกำหนดไปเลยแบบนี้ชนิดตัวแปรก็จะเป็นตามที่กำหนด 
+    var intNumber2: Int = 0 //ถ้าประกาศแบบกำหนดไปเลยแบบนี้ชนิดตัวแปรก็จะเป็นตามที่กำหนด
     var strNumber1 = ""
     var strNumber2: String = ""
     
@@ -34,6 +34,12 @@ class ViewController: UIViewController {
         //Show Log
         print("strNumber1 ==> \(strNumber1)")
         print("strNumber2 ==> \(strNumber2)")
+        
+        //change Datatype
+        intNumber1 = Int(strNumber1)!
+        intNumber2 = Int(strNumber2)!
+        print("intNumber1 ==> \(intNumber1)")
+        print("intNumber2 ==> \(intNumber2)")
         
         
     } // answerButton
