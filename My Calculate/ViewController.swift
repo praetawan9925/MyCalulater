@@ -13,10 +13,17 @@ class ViewController: UIViewController {
     //Implicit คือ  การประกาศตัวแปรโดยกำหนดชนิดตัวแปรเอง
     var intNumber1 = 0  //ถ้าประกาศแบบนี้ตัวแปรจะเป็น Double อัตโนมัติ
     var intNumber2: Int = 0 //ถ้าประกาศแบบกำหนดไปเลยแบบนี้ชนิดตัวแปรก็จะเป็นตามที่กำหนด
+    var intAnswer: Int = 0
+    
+    //Implicit for string
     var strNumber1 = ""
     var strNumber2: String = ""
+    var strAnswer: String = ""
     
     
+    
+    //   การประกาศตัวแปรที่เชื่อมกับอุปกรณ์
+    @IBOutlet weak var answerLabel: UILabel!
     
     
     
@@ -40,6 +47,11 @@ class ViewController: UIViewController {
         intNumber2 = Int(strNumber2)!
         print("intNumber1 ==> \(intNumber1)")
         print("intNumber2 ==> \(intNumber2)")
+        
+        //Calculate
+        intAnswer = intNumber1 + intNumber2
+        print("intAnswer \(intAnswer)")
+        
         
         
     } // answerButton

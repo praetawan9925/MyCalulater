@@ -76,6 +76,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answerLabel" destination="JBp-fp-Nky" id="BuU-MH-os9"/>
                         <outlet property="num1TextField" destination="LLQ-5W-F4S" id="UUD-LD-njn"/>
                         <outlet property="num2TextField" destination="tA4-eK-RU8" id="iO7-mw-H51"/>
                     </connections>
